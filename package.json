@@ -1,6 +1,6 @@
 {
   "name": "effective",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "polyfill for [get|set]e[uid|gid]",
   "main": "index.js",
   "scripts": {
