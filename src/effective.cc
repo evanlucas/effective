@@ -88,7 +88,7 @@ NAN_METHOD(SetEUid) {
   }
 
   if (seteuid(uid)) {
-    return Nan::ThrowError(Nan::NanErrnoException(errno, "seteuid", "", NULL));
+    return Nan::ThrowError(Nan::ErrnoException(errno, "seteuid", "", NULL));
   }
 }
 
@@ -104,7 +104,7 @@ NAN_METHOD(SetEGid) {
   }
 
   if (setegid(gid)) {
-    return Nan::ThrowError(Nan::NanErrnoException(errno, "setegid", "", NULL));
+    return Nan::ThrowError(Nan::ErrnoException(errno, "setegid", "", NULL));
   }
 }
 
